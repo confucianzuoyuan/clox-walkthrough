@@ -136,7 +136,7 @@ static uint8_t makeConstant(Value value)
     return (uint8_t)constant;
 }
 
-static uint8_t emitConstant(Value value)
+static void emitConstant(Value value)
 {
     emitBytes(OP_CONSTANT, makeConstant(value));
 }
